@@ -10,6 +10,11 @@ app.get('/:name', async (c) => {
   return c.json(city);
 })
 
+app.get('/', async (c) => {
+  return c.text('To use this API, use the endpoint /:cityName')
+})
+
+
 const port = 3000
 console.log(`Server is running on port ${port}`)
 

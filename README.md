@@ -1,8 +1,11 @@
+
+# Hono + Prisma ORM + SQLite Geo Coordinates API
+
 ```
-npm install
-npm run dev
+pnpm install
+pnpm run dev
 ```
 
 ```
-open http://localhost:3000
+opened http://localhost:3000
 ```

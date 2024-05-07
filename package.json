@@ -1,8 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "serve": "tsx watch src/index.ts",
-    "dev": "tsx watch prisma/db.ts"
+    "dev": "tsx watch src/index.ts"
   },
   "dependencies": {
     "@hono/node-server": "^1.11.1",
