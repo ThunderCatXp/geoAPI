@@ -1,5 +1,5 @@
-
-# Hono + Prisma ORM + SQLite Geo Coordinates API
+# Geo Coordinates API
+## Hono + Prisma ORM + SQLite 
 
 ```
 pnpm install
