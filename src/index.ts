@@ -1,10 +1,13 @@
 import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
+import { getCity } from '../prisma/db'
 
 const app = new Hono()
 
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
+app.get('/:name', async (c) => {
+  const cityName = c.req.param('name');
+  let city = await getCity(cityName);
+  return c.json(city);
 })
 
 const port = 3000
