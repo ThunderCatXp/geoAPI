@@ -3,8 +3,8 @@
 ## Hono + Prisma ORM + SQLite
 
 ```bash
-pnpm install
-pnpm run dev
+npm install
+npm run dev
 ```
 
 ```bash
