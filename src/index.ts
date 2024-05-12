@@ -7,11 +7,11 @@ const app = new Hono()
 app.get('/:name', async (c) => {
   const cityName = c.req.param('name');
   let city = await getCity(cityName);
-  return c.json(city);
+  return c.text(city)
 })
 
 app.get('/', async (c) => {
-  return c.text('To use this API, use the endpoint /:cityName')
+  return c.text('To use this API, use the endpoint with /:cityName')
 })
 
 

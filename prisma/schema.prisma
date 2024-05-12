@@ -8,10 +8,16 @@ datasource db {
 }
 
 model location {
-  id        Int    @id @default(autoincrement())
-  country   String
-  city      String
-  latitude  Float
-  longitude Float
-  altitude  Float
+  id                Int     @id @default(autoincrement())
+  name              String?
+  asciiname         String?
+  alternatenames    String?
+  latitude          Float?
+  longitude         Float?
+  country_code      String?
+  population        BigInt?
+  elevation         Float?
+  dem               BigInt?
+  timezone          String?
+  modification_date String?
 }
