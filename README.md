@@ -11,7 +11,7 @@ npm run dev
 opened http://localhost:3000
 ```
 
-API output example:
+API output example(with formating):
 
 ```json
 {
