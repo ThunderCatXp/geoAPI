@@ -6,7 +6,7 @@ export async function getCity(city: string) {
     const result = await prisma.location.findFirst(
         {
             where: {
-                name: city 
+                asciiname: city 
             }
         }
     );

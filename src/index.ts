@@ -4,14 +4,14 @@ import { getCity } from '../prisma/db'
 
 const app = new Hono()
 
-app.get('/:name', async (c) => {
+app.get('search/:name', async (c) => {
   const cityName = c.req.param('name');
   let city = await getCity(cityName);
   return c.text(city)
 })
 
 app.get('/', async (c) => {
-  return c.text('To use this API, use the endpoint with /:cityName')
+  return c.text('To use this API, use the endpoint with /search/:cityName')
 })
 
 

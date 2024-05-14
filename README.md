@@ -1,4 +1,4 @@
-# Geo Coordinates API
+# Geocoding API
 
 ## Hono + Prisma ORM + SQLite
 
@@ -11,7 +11,7 @@ npm run dev
 opened http://localhost:3000
 ```
 
-API output example(with formating):
+## API output example(with formating)
 
 ```json
 {
@@ -29,3 +29,5 @@ API output example(with formating):
    "modification_date":"2022-12-10"
 }
 ```
+
+`dem stands for Digital Elevation Model`<sup>*</sup>
