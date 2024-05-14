@@ -30,4 +30,4 @@ opened http://localhost:3000
 }
 ```
 
-`dem stands for Digital Elevation Model`<sup>*</sup>
+`dem` stands for Digital Elevation Model<sup>*</sup>
