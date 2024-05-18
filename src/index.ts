@@ -5,7 +5,7 @@ import { getCity, getCityByLocaleName } from '../prisma/db'
 const app = new Hono()
 
 app.get('/', async (c) => {
-  return c.text('To use this API, use the endpoint with /search/:cityName')
+  return c.text('To use this API, use the endpoint with /search/:cityName or /searchLocalName/:cityName')
 })
 
 app.get('search/:name', async (c) => {
