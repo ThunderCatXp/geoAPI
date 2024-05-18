@@ -31,3 +31,13 @@ opened http://localhost:3000
 ```
 
 `dem` stands for Digital Elevation Model<sup>*</sup>
+
+## Run docker
+
+```bash
+docker build -t geoapi .
+```
+
+```bash
+docker run -p 3000:3000 geoapi
+```

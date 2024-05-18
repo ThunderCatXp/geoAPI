@@ -23,4 +23,5 @@ EXPOSE 3000
 CMD ["npm", "run", "dev"]
 
 # Actually working,hosts on port 3000
+# docker build -t geoapi .
 # docker run -p 3000:3000 geoapi
