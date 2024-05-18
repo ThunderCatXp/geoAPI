@@ -19,6 +19,23 @@ export async function getCity(city: string) {
     return CircularJSON.stringify(resultWithBigIntToString);
 }
 
+export async function getCityByLocaleName(city: string) {
+    const result = await prisma.location.findFirst(
+        {
+            where: {
+                alternatenames: {
+                    contains: city
+                } 
+            }
+        }
+    );
+    const resultWithBigIntToString = convertBigIntToString(result);
+    
+    await prisma.$disconnect();
+
+    return CircularJSON.stringify(resultWithBigIntToString);
+}
+
 function convertBigIntToString(obj: any): any {
     for (const key in obj) {
         if (Object.prototype.hasOwnProperty.call(obj, key)) {
