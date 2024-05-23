@@ -2,7 +2,7 @@
 FROM node:latest
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /api
 
 # Copy the package.json and package-lock.json files
 COPY package*.json ./
