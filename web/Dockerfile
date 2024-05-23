@@ -1,6 +1,6 @@
 FROM node:latest
 
-WORKDIR /app
+WORKDIR /web
 
 COPY package*.json ./
 
@@ -12,5 +12,5 @@ EXPOSE 4000
 
 CMD ["npm", "run", "dev"]
 
-# docker build -t app .
-# docker run -p 4000:4000 app
+# docker build -t web .
+# docker run -p 4000:4000 web
