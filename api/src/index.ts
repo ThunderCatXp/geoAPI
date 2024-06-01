@@ -11,13 +11,13 @@ app.get('/', async (c) => {
 app.get('search/:name', async (c) => {
   const cityName = c.req.param('name');
   let city = await getCity(cityName);
-  return c.text(city)
+  return c.json(city)
 })
 
 app.get('searchLocalName/:name', async (c) => {
   const cityName = c.req.param('name');
   let city = await getCityByLocaleName(cityName);
-  return c.text(city)
+  return c.json(city)
 })
 
 const port = 3000
