@@ -1,8 +1,10 @@
 import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
 import { getCity, getCityByLocaleName } from '../prisma/db'
+import { cors } from 'hono/cors'
 
 const app = new Hono()
+app.use(cors())
 
 app.get('/', async (c) => {
   return c.text('To use this API, use the endpoint with /search/:cityName or /searchLocalName/:cityName')
