@@ -2,9 +2,10 @@
 import { ref } from 'vue';
 
 let data = ref(null);
+let city = ref('');
 
-async function fetchData() {
-  const response = await fetch('http://localhost:3000/search/London');
+async function fetchData(city : string) {
+  const response = await fetch('http://localhost:3000/search/'+ city);
   const jsonData = await response.json();
   data.value = jsonData;
 }
@@ -14,7 +15,8 @@ async function fetchData() {
 
 <template>
   <main>
+    <input type="text" v-model="city"/>
     <h1 style="font-size: large;">{{ data }}</h1>
-    <button @click="fetchData">Fetch Data</button>
+    <button @click="fetchData(city)">Fetch Data</button>
   </main>
 </template>
