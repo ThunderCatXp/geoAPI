@@ -1,10 +1,16 @@
 services:
   web:
-    build: /web
+    build: ./web
     ports:
-      - "4000:4000"
+      - "8080:8080"
+    networks:
+      - app
   api:
-    build: /api
+    build: ./api
     ports:
       - "3000:3000"
-
+    networks:
+      - app
+networks:
+  app:
+    driver: bridge
