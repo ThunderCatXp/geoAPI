@@ -5,7 +5,7 @@ let data = ref(null);
 let city = ref('');
 
 async function fetchData(city : string) {
-  const response = await fetch('http://localhost:3000/search/'+ city);
+  const response = await fetch('http://api:300/search/'+ city);
   const jsonData = await response.json();
   data.value = jsonData;
 }

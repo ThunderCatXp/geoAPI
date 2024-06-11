@@ -11,6 +11,7 @@ services:
       - "3000:3000"
     networks:
       - app
+
 networks:
   app:
     driver: bridge
