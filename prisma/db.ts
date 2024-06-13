@@ -1,6 +1,5 @@
 import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
-import CircularJSON from 'circular-json'
 
 export async function getCity(city: string) {
     const result = await prisma.location.findFirst(
@@ -16,7 +15,7 @@ export async function getCity(city: string) {
     
     await prisma.$disconnect();
 
-    return CircularJSON.stringify(resultWithBigIntToString);
+    return resultWithBigIntToString;
 }
 
 export async function getCityByLocaleName(city: string) {
@@ -33,7 +32,7 @@ export async function getCityByLocaleName(city: string) {
     
     await prisma.$disconnect();
 
-    return CircularJSON.stringify(resultWithBigIntToString);
+    return resultWithBigIntToString;
 }
 
 function convertBigIntToString(obj: any): any {

@@ -7,10 +7,6 @@ npm install
 npm run dev
 ```
 
-```bash
-opened http://localhost:3000
-```
-
 ## API output example(with formating)
 
 ```json
