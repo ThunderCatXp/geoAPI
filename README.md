@@ -2,3 +2,6 @@
 
 ## Hono + Prisma ORM + SQLite
 
+```bash
+docker compose up -d
+```
