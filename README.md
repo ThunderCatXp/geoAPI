@@ -38,13 +38,17 @@ docker build -t geoapi .
 docker run -p 3000:3000 geoapi
 ```
 
+## Run nginx load balancer
+
+```bash
+docker-compose up -d --build
+```
+
 ## Future plans
 
-- [ ] Make NGINX load balancer
+- [x] Make NGINX load balancer
 - [ ] Provide an ability to connect Postgress db for user validation and expenses counting
 - [ ] Improve demo site visuals
 - [ ] Add a documentation on a demo site
-
-
 
 ![diagram](https://github.com/ThunderCatXp/geoAPI/assets/53365307/c4947715-b591-4932-88e0-03711106da41)
