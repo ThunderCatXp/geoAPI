@@ -16,7 +16,7 @@
     import { ref } from 'vue';
 
     let data = ref(null);
-    let city = ref('Moscow');
+    let city = ref('');
 
     async function fetchData(city : string) {
         const response = await fetch('http://localhost:3000/search/'+ city);
