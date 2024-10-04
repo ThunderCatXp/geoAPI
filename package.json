@@ -6,7 +6,7 @@
   "dependencies": {
     "@hono/node-server": "^1.11.1",
     "@prisma/client": "5.13.0",
-    "hono": "^4.3.1",
+    "hono": "^4.5.8",
     "json-stringify-safe": "^5.0.1",
     "prisma": "^5.13.0"
   },
