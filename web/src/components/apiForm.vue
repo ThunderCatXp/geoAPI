@@ -1,13 +1,13 @@
 
 <template>
-    <div>
+    <div class="p-5">
       <input
-      class="w-50 p-2"
+      class="p-5 h-auto border border-slate-500 rounded-lg w-1/4"
       type="text" 
       v-model="city">
     </input>
       <h1>{{ data }}</h1>
-      <button @click="fetchData(city)">Fetch Data</button>
+      <button @click="fetchData(city)" class="p-2 mt-5 border border-slate-500  rounded-md">Fetch Data</button>
     </div>
   </template>
   
