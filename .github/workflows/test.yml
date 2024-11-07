@@ -22,13 +22,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # need checkout before using compose-action
-      - uses: actions/checkout@v3
-      - uses: hoverkraft-tech/compose-action@v2.0.1
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v
         with:
-          compose-file: "./compose.yaml"
-          services: |
-            geoapi-balancer-1
-            geoapi-server-1-1
-            geoapi-server-2-1
-            geoapi-server-3-1
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Run Docker Compose
+        run: |
+          docker build .
+          docker build ./nginx
