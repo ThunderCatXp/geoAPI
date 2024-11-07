@@ -28,7 +28,7 @@ jobs:
         with:
           compose-file: "./compose.yaml"
           services: |
-            balancer-1
-            server-1-1
-            server-2-1
-            server-3-1
+            geoapi-balancer-1
+            geoapi-server-1-1
+            geoapi-server-2-1
+            geoapi-server-3-1
