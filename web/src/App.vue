@@ -1,11 +1,10 @@
+<script setup lang="ts">
+import apiForm from './components/apiForm.vue';
+</script>
+
 <template>
-  <v-app>
-    <v-main>
-      <router-view />
-    </v-main>
-  </v-app>
+  <apiForm/>
 </template>
 
-<script lang="ts" setup>
-  //
-</script>
+<style scoped>
+</style>

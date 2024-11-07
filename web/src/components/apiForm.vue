@@ -1,14 +1,13 @@
 
 <template>
     <div>
-      <v-text-field 
+      <input
       class="w-50 p-2"
       type="text" 
-      v-model="city" 
-      variant="outlined">
-    </v-text-field>
+      v-model="city">
+    </input>
       <h1>{{ data }}</h1>
-      <v-btn @click="fetchData(city)">Fetch Data</v-btn>
+      <button @click="fetchData(city)">Fetch Data</button>
     </div>
   </template>
   
