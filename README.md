@@ -1,5 +1,8 @@
 # Geocoding API
 
+![maintained - yes](https://img.shields.io/badge/maintained-yes-green)
+[![Made with TypeScript](https://img.shields.io/badge/Made_with-TypeScript-blue?logo=typescript&logoColor=white)](https://www.javascript.com/ "Go to JavaScript homepage")
+
 ## Hono + Prisma ORM + SQLite
 
 ```bash
