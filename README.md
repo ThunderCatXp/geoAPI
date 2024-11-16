@@ -1,5 +1,8 @@
 # Geocoding API
 
+![maintained - yes](https://img.shields.io/badge/maintained-yes-green)
+[![Made with TypeScript](https://img.shields.io/badge/Made_with-TypeScript-blue?logo=typescript&logoColor=white)](https://www.javascript.com/ "Go to JavaScript homepage")
+
 ## Hono + Prisma ORM + SQLite
 
 ```bash
@@ -47,8 +50,9 @@ docker-compose up -d --build
 ## Future plans
 
 - [x] Make NGINX load balancer
-- [ ] Provide an ability to connect Postgress db for user validation and expenses counting
+- [ ] Provide an ability to connect Supabase for user validation and expenses counting
 - [ ] Improve demo site visuals
 - [ ] Add a documentation on a demo site
 
-![diagram](https://github.com/ThunderCatXp/geoAPI/assets/53365307/c4947715-b591-4932-88e0-03711106da41)
+![diagram-export-04 10 2024-14_42_07](https://github.com/user-attachments/assets/e79b7e65-e168-4ad6-ba1d-c0054c9bf16d)
+
