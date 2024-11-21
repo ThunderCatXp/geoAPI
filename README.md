@@ -54,5 +54,6 @@ docker-compose up -d --build
 - [ ] Improve demo site visuals
 - [ ] Add a documentation on a demo site
 
-![diagram-export-04 10 2024-14_42_07](https://github.com/user-attachments/assets/e79b7e65-e168-4ad6-ba1d-c0054c9bf16d)
+![diagram-export-21 11 2024-19_12_47](https://github.com/user-attachments/assets/976282e4-294d-4a82-8753-849379052cdb)
+
 
