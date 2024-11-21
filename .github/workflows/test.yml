@@ -18,6 +18,10 @@ jobs:
 
       - name: Run dev
         run: npm run dev &
+
+      - name: Run tests
+        run: npm test &
+
   run_docker:
     runs-on: ubuntu-latest
 
