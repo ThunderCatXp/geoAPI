@@ -1,6 +1,5 @@
 # Geocoding API
 
-![maintained - yes](https://img.shields.io/badge/maintained-yes-green)
 [![Made with TypeScript](https://img.shields.io/badge/Made_with-TypeScript-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/ "Go to TypeScript homepage")
 
 ## Hono + Prisma ORM + SQLite
