@@ -49,10 +49,8 @@ docker-compose up -d --build
 ## Future plans
 
 - [x] Make NGINX load balancer
-- [ ] Provide an ability to connect Supabase for user validation and expenses counting
-- [ ] Improve demo site visuals
-- [ ] Add a documentation on a demo site
+- [x] Have a deploy workflow
+- [ ] Working frontend
+
 
 ![diagram-export-21 11 2024-19_12_47](https://github.com/user-attachments/assets/976282e4-294d-4a82-8753-849379052cdb)
-
-

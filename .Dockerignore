@@ -8,6 +8,7 @@
 **/.dockerignore
 **/.git
 **/.gitignore
+**/.github
 **/.project
 **/.settings
 **/.toolstarget
@@ -18,6 +19,7 @@
 **/*.*proj.user
 **/*.dbmdl
 **/*.jfm
+**/nginx
 **/charts
 **/docker-compose*
 **/compose*
@@ -31,3 +33,4 @@
 **/dist
 LICENSE
 README.md
+compose.yaml
