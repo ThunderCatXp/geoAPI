@@ -53,4 +53,5 @@ docker-compose up -d --build
 - [ ] Working frontend
 
 
-![diagram-export-21 11 2024-19_12_47](https://github.com/user-attachments/assets/976282e4-294d-4a82-8753-849379052cdb)
+<img width="867" height="883" alt="diagram-export-08 10 2025-23_11_26" src="https://github.com/user-attachments/assets/9570719d-e54c-4f6c-9799-1dc7619eedd4" />
+
