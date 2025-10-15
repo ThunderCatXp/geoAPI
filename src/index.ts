@@ -8,6 +8,8 @@ import { EtcdTokenManager } from './etcd.ts'
 export const app = new Hono()
 const tokenManager = new EtcdTokenManager();
 
+app.get('/', cors())
+
 app.get('/', async (c) => {
   const authInfo = tokenManager.isUsingDefaultToken() 
     ? `\nDevelopment mode: Use Authorization: Bearer ${tokenManager.getDefaultToken()} to access protected endpoints`
