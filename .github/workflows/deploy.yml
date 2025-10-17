@@ -28,4 +28,4 @@ jobs:
         with:
           context: . # Path to your Dockerfile context
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/geoapi-backend:latest
+          tags: thundercatxp/geoapi-backend:latest
